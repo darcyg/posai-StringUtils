@@ -3,7 +3,7 @@
 //
 
 #include <locale>
-#include "casemods.h"
+#include "conversions.h"
 
 std::string uppercase(std::string const& str)
 {
@@ -44,6 +44,13 @@ std::string letters(std::string const& str)
     std::locale current_loc;
     std::string ret;
 
+    for (auto ch: str)
+    {
+        if (std::isalpha(ch,current_loc))
+            ret+=ch;
+    }
+
+    return ret;
 }
 
 std::string digits(std::string const &str)

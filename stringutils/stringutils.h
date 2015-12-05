@@ -7,7 +7,7 @@
 
 #include "transformations.h"
 #include "metrics.h"
-#include "casemods.h"
+#include "conversions.h"
 #include "set_locale.h"
 
 #endif //POSAI_STRINGUTILS_STRINGUTILS_H

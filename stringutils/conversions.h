@@ -8,12 +8,12 @@
 #include <string>
 
 /**
- * Converts to uppercase according to the current locale.
+ * Returns uppercased input according to the current locale.
  */
 std::string uppercase(std::string const& str);
 
 /**
- * Converts to lowercase according to the current locale.
+ * Returns lowercased input according to the current locale.
  */
 std::string lowercase(std::string const& str);
 
