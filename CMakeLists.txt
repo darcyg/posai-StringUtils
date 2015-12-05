@@ -7,7 +7,9 @@ file(GLOB SU stringutils/*.h stringutils/*.cpp)
 
 set(SOURCE_FILES ${SU})
 
+include_directories(stringutils)
+
 add_library(posai_StringUtils SHARED ${SOURCE_FILES})
 
-add_executable(ptest main.cpp)
+add_executable(ptest test/test.cpp)
 target_link_libraries(ptest posai_StringUtils)

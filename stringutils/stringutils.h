@@ -5,7 +5,7 @@
 #ifndef POSAI_STRINGUTILS_STRINGUTILS_H
 #define POSAI_STRINGUTILS_STRINGUTILS_H
 
-#include "reverse.h"
+#include "transformations.h"
 #include "metrics.h"
 #include "casemods.h"
 #include "set_locale.h"
