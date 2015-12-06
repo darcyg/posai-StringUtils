@@ -3,7 +3,9 @@
 
 int main()
 {
-    set_locale("en_US.UTF8");
+//    set_locale("en_US.UTF8");
+
+    const double pi = 3.141592653589;
 
     std::cout << std::boolalpha << std::isalpha('a',std::locale()) << "\n";
     std::cout << std::boolalpha << std::isalpha(wchar_t(L'æ'),std::locale()) << "\n";
@@ -16,6 +18,11 @@ int main()
     std::cout << editing_distance("APFEL","PFERD") << std::endl;
     std::cout << uppercase("Hello, World!") << std::endl;
     std::cout << lowercase("Hello, World!") << std::endl;
+
+    std::cout << num_to_string(pi,2) << std::endl;
+    std::cout << num_to_string(pi,20) << std::endl;
+    std::cout << num_to_string(pi,0) << std::endl;
+    std::cout << pad_digits( num_to_string(3000,1), 10 ) << std::endl;
 
     std::cout << letters("a12b34c56def7g89hij0") << std::endl;
     std::cout << digits("a12b34c56def7g89hij0") << std::endl;

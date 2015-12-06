@@ -9,5 +9,7 @@
 #include "metrics.h"
 #include "conversions.h"
 #include "set_locale.h"
+#include "make_string.h"
+#include "special_cases.h"
 
 #endif //POSAI_STRINGUTILS_STRINGUTILS_H
