@@ -2,8 +2,8 @@
 // Created by levin on 12/5/15.
 //
 
-#ifndef POSAI_STRINGUTILS_REVERSE_H
-#define POSAI_STRINGUTILS_REVERSE_H
+#ifndef POSAI_STRINGUTILS_TRANSFORMATIONS_H
+#define POSAI_STRINGUTILS_TRANSFORMATIONS_H
 
 #include <string>
 
@@ -17,4 +17,4 @@ std::string reverse(std::string const& str);
  */
 std::string substitute(std::string const& str, std::string pattern, std::string replacement);
 
-#endif //POSAI_STRINGUTILS_REVERSE_H
+#endif //POSAI_STRINGUTILS_TRANSFORMATIONS_H

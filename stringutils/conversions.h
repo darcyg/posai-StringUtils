@@ -2,8 +2,8 @@
 // Created by levin on 12/5/15.
 //
 
-#ifndef POSAI_STRINGUTILS_CASEMODS_H
-#define POSAI_STRINGUTILS_CASEMODS_H
+#ifndef POSAI_STRINGUTILS_CONVERSIONS_H
+#define POSAI_STRINGUTILS_CONVERSIONS_H
 
 #include <string>
 
@@ -27,4 +27,4 @@ std::string letters(std::string const& str);
  */
 std::string digits(std::string const& str);
 
-#endif //POSAI_STRINGUTILS_CASEMODS_H
+#endif //POSAI_STRINGUTILS_CONVERSIONS_H
