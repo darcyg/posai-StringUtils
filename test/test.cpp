@@ -23,6 +23,11 @@ int main()
     std::cout << num_to_string(pi,20) << std::endl;
     std::cout << num_to_string(pi,0) << std::endl;
     std::cout << pad_digits( num_to_string(3000,1), 10 ) << std::endl;
+    std::cout << hex(42) << std::endl;
+    std::cout << hex(123456) << std::endl;
+    std::cout << hex(0xffffff) << std::endl;
+    std::cout << binary(42) << std::endl;
+    std::cout << binary(128) << std::endl;
 
     std::cout << letters("a12b34c56def7g89hij0") << std::endl;
     std::cout << digits("a12b34c56def7g89hij0") << std::endl;
