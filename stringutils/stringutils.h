@@ -11,5 +11,6 @@
 #include "set_locale.h"
 #include "make_string.h"
 #include "special_cases.h"
+#include "substring.h"
 
 #endif //POSAI_STRINGUTILS_STRINGUTILS_H

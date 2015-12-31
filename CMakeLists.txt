@@ -5,7 +5,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 file(GLOB SU stringutils/*.h stringutils/*.cpp)
 
-set(SOURCE_FILES ${SU})
+set(SOURCE_FILES ${SU} stringutils/substring.h stringutils/substring.cpp)
 
 include_directories(stringutils)
 

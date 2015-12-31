@@ -32,5 +32,9 @@ int main()
     std::cout << letters("a12b34c56def7g89hij0") << std::endl;
     std::cout << digits("a12b34c56def7g89hij0") << std::endl;
 
+    auto words = split("abc#def#Hello#World",'#');
+    for (auto &w: words)
+        std::cout << w << std::endl;
+
     return 0;
 }
