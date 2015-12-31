@@ -9,6 +9,8 @@
 #include <type_traits>
 #include <iomanip>
 
+namespace str{
+
 /**
  * Alias for a number being converted to a string.
  * Can only be used with arithmetic types.
@@ -74,4 +76,5 @@ IntegerString<T> binary(T input)
     return s.str();
 }
 
+}
 #endif //POSAI_STRINGUTILS_MAKE_STRING_H

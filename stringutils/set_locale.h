@@ -5,6 +5,10 @@
 #ifndef POSAI_STRINGUTILS_SET_LOCALE_H
 #define POSAI_STRINGUTILS_SET_LOCALE_H
 
+namespace str {
+
 void set_locale(std::string identifier);
+
+}
 
 #endif //POSAI_STRINGUTILS_SET_LOCALE_H

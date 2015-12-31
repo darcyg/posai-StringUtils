@@ -4,6 +4,7 @@
 int main()
 {
 //    set_locale("en_US.UTF8");
+    using namespace str;
 
     const double pi = 3.141592653589;
 

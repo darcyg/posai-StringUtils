@@ -7,6 +7,8 @@
 
 #include <string>
 
+namespace str{
+
 /**
  * Returns uppercased input according to the current locale.
  */
@@ -26,5 +28,7 @@ std::string letters(std::string const& str);
  * Returns the digits of the input string, discarding everything else.
  */
 std::string digits(std::string const& str);
+
+}
 
 #endif //POSAI_STRINGUTILS_CONVERSIONS_H
