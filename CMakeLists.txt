@@ -3,11 +3,12 @@ project(posai_StringUtils)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-file(GLOB SU stringutils/*.h stringutils/*.cpp)
+file(GLOB SU inc/*.h src/*.cpp)
 
-set(SOURCE_FILES ${SU} stringutils/substring.h stringutils/substring.cpp)
+set(SOURCE_FILES ${SU})
 
-include_directories(stringutils)
+include_directories(inc)
+include_directories(src)
 
 add_library(posai_StringUtils SHARED ${SOURCE_FILES})
 
