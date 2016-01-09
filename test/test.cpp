@@ -17,6 +17,7 @@ int main()
     std::cout << substitute("WaffelGaffelSchnaffelFalaffel","affel","anst") << std::endl;
     std::cout << hamming_distance("fafafafa","fagafaga") << std::endl;
     std::cout << editing_distance("APFEL","PFERD") << std::endl;
+    std::cout << hamming_distance("fafafafa","fafafa") << std::endl;
     std::cout << uppercase("Hello, World!") << std::endl;
     std::cout << lowercase("Hello, World!") << std::endl;
 
@@ -36,6 +37,9 @@ int main()
     auto words = split("abc#def#Hello#World",'#');
     for (auto &w: words)
         std::cout << w << std::endl;
+
+    std::cout << pad_front("Boop!",10,'_') << std::endl;
+    std::cout << pad_back("Boop!",10,'_') << std::endl;
 
     return 0;
 }
