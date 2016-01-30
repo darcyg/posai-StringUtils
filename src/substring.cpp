@@ -8,10 +8,10 @@
 namespace str {
 
 
-std::vector<std::string> split(std::string str, char sep)
+vector<string> split(string str, char sep)
 {
-    std::vector<std::string> ret;
-    std::string temp = str;
+    vector<string> ret;
+    string temp = str;
 
     auto pos = temp.find(sep);
     // Push all substrings from occurences of <sep>
@@ -24,6 +24,13 @@ std::vector<std::string> split(std::string str, char sep)
     // Push the remaining part from last <sep> until end of string.
     ret.push_back(temp);
 
+    return ret;
+}
+
+string between(string str, string start, string end)
+{
+    string ret=str.substr(str.find(start)+start.size(),str.size());
+    ret=ret.substr(0,ret.find(end));
     return ret;
 }
 

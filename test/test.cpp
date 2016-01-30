@@ -41,5 +41,8 @@ int main()
     std::cout << pad_front("Boop!",10,'_') << std::endl;
     std::cout << pad_back("Boop!",10,'_') << std::endl;
 
+    std::cout << between("schlabberMcschlipp","schlabber","schlipp") << std::endl;
+    std::cout << between("sboingbatschsabber","s","s") << std::endl;
+
     return 0;
 }
