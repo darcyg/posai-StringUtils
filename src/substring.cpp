@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include <algorithm>
 #include "substring.h"
 
 namespace str {
@@ -34,4 +35,30 @@ string between(string str, string start, string end)
     return ret;
 }
 
+string without_first(string str, string match)
+{
+    string ret = str;
+
+    auto it = std::search(ret.begin(),ret.end(),match.begin(),match.end());
+    ret.erase(it,it+match.size());
+
+    return ret;
+}
+
+string without(string str, string match)
+{
+    string ret = str;
+
+    while (contains(ret,match))
+    {
+        ret=without_first(ret,match);
+    }
+
+    return ret;
+}
+
+bool contains(string str, string substr)
+{
+    return (std::search(str.begin(),str.end(),substr.begin(),substr.end()) != str.end());
+}
 }
