@@ -61,4 +61,17 @@ bool contains(string str, string substr)
 {
     return (std::search(str.begin(),str.end(),substr.begin(),substr.end()) != str.end());
 }
+
+string until_first(string str, string match)
+{
+    string ret = str;
+    auto it = std::search(ret.begin(),ret.end(),match.begin(),match.end());
+    if (it==ret.end())
+    {
+        return ret;
+    }
+    return ret.substr(0,it-ret.begin());
+}
+
+
 }

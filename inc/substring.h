@@ -36,6 +36,11 @@ vector<string> split(string str, char sep = '\n');
 string between(string str, string start, string end);
 
 /**
+ * Returns a substring of str from its beginning to (and not including) the first occurrence of match.
+ */
+string until_first(string str, string match);
+
+/**
  * Returns a copy of str with the first occurrence of match removed.
  */
 string without_first(string str, string match);

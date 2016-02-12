@@ -44,6 +44,8 @@ int main()
     std::cout << between("schlabberMcschlipp","schlabber","schlipp") << std::endl;
     std::cout << between("sboingbatschsabber","s","s") << std::endl;
 
+    std::cout << until_first("KEEPTHISnarfDELETETHIS","narf") << std::endl;
+
     std::cout << without_first("gabbagabba","gabba") << std::endl;
     std::cout << without("i like the flowers i like the daffodils","like") << std::endl;
 
