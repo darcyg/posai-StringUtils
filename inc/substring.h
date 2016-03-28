@@ -26,6 +26,13 @@ bool contains(string str, string substr);
 vector<string> split(string str, char sep = '\n');
 
 /**
+ * Extracts substrings of fixed size len from str by iterating over it until
+ * the mask of size len no longer fits. Returns an empty vector if str.length()
+ * is smaller than len.
+ */
+vector<string> fixsubstrings(string str, size_t len);
+
+/**
  * Returns a substring of <str> containing the characters between, and not including, the
  * first occurrences of substrings <start> and <end>.
  * If <start> is not in <str>, the result starts at str.begin().

@@ -15,7 +15,7 @@ vector<string> split(string str, char sep)
     string temp = str;
 
     auto pos = temp.find(sep);
-    // Push all substrings from occurences of <sep>
+    // Push all substrings from occurrences of <sep>
     while (pos != temp.npos)
     {
         ret.push_back(temp.substr(0, pos));
@@ -24,6 +24,22 @@ vector<string> split(string str, char sep)
     }
     // Push the remaining part from last <sep> until end of string.
     ret.push_back(temp);
+
+    return ret;
+}
+
+vector<string> fixsubstrings(string str, size_t len)
+{
+    vector<string> ret;
+    if (len>str.size())
+        return ret;
+
+    for(size_t i=0; i<str.size()+1-len; ++i)
+    {
+        auto temp = str.substr(i,len);
+        if (temp.length()==len)
+            ret.push_back(temp);
+    }
 
     return ret;
 }
@@ -72,6 +88,5 @@ string until_first(string str, string match)
     }
     return ret.substr(0,it-ret.begin());
 }
-
 
 }

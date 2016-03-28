@@ -49,5 +49,9 @@ int main()
     std::cout << without_first("gabbagabba","gabba") << std::endl;
     std::cout << without("i like the flowers i like the daffodils","like") << std::endl;
 
+    auto parts = fixsubstrings("abcdefghijklmnopqrstuvwxyz",10);
+    for (auto &p: parts)
+        std::cout << p << std::endl;
+
     return 0;
 }
