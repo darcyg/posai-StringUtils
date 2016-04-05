@@ -79,7 +79,7 @@ IntegerString<T> binary(T input)
     return s.str();
 }
 
-string versionString()
+inline string versionString()
 {
     return num_to_string(VERSION_MAJOR)+"."+num_to_string(VERSION_MINOR)+"."+num_to_string(VERSION_PATCH);
 }

@@ -47,7 +47,7 @@ typename std::enable_if<
         }
     }
     return wstr+suffix;
-};
+}
 
 
 }
