@@ -8,8 +8,11 @@
 #include <sstream>
 #include <type_traits>
 #include <iomanip>
+#include "version.h"
 
 namespace str{
+
+using std::string;
 
 /**
  * Alias for a number being converted to a string.
@@ -18,7 +21,7 @@ namespace str{
 template<typename T>
 using NumberString = typename std::enable_if<
     std::is_arithmetic<T>::value,
-    std::string
+    string
 >::type;
 
 /**
@@ -27,7 +30,7 @@ using NumberString = typename std::enable_if<
 template<typename T>
 using IntegerString = typename std::enable_if<
     std::is_integral<T>::value,
-    std::string
+    string
 >::type;
 
 // TODO Fortify this function against locale-specific settings like thousand-digits separators.
@@ -74,6 +77,11 @@ IntegerString<T> binary(T input)
     s << binary(input >> 1) << (input % 2);
 
     return s.str();
+}
+
+string versionString()
+{
+    return num_to_string(VERSION_MAJOR)+"."+num_to_string(VERSION_MINOR)+"."+num_to_string(VERSION_PATCH);
 }
 
 }

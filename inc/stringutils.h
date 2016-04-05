@@ -9,7 +9,8 @@
 #include "metrics.h"
 #include "conversions.h"
 #include "set_locale.h"
-#include "make_string.h"
+//#include "make_string.h" //implicitly included by lex.h
+#include "lex.h"
 #include "padding.h"
 #include "substring.h"
 

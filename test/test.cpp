@@ -8,9 +8,11 @@ int main()
 
     const double pi = 3.141592653589;
 
-    std::cout << std::boolalpha << std::isalpha('a',std::locale()) << "\n";
-    std::cout << std::boolalpha << std::isalpha(wchar_t(L'æ'),std::locale()) << "\n";
-    std::cout << std::boolalpha << std::isalpha('4',std::locale()) << "\n";
+    std::cout << "Posai String Utils version " << versionString() << std::endl;
+
+    std::cout << std::boolalpha << std::isalpha('a',std::locale()) << std::endl;
+    std::cout << std::boolalpha << std::isalpha(wchar_t(L'æ'),std::locale()) << std::endl;
+    std::cout << std::boolalpha << std::isalpha('4',std::locale()) << std::endl;
 
     std::cout << reverse("Hello, World!") << std::endl;
     std::cout << substitute("Hello, World!","World","Posai") << std::endl;
@@ -52,6 +54,11 @@ int main()
     auto parts = fixsubstrings("abcdefghijklmnopqrstuvwxyz",10);
     for (auto &p: parts)
         std::cout << p << std::endl;
+
+    for (auto i=0; i<25; ++i)
+    {
+        std::cout << naturalNumSuffix(i) << std::endl;
+    }
 
     return 0;
 }
