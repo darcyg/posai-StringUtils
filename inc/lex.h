@@ -25,7 +25,7 @@ template<typename T>
 typename std::enable_if<
     std::is_convertible<T,size_t>::value,
     string
->::type  naturalNumSuffix(T const& t)
+>::type  natural_num_suffix(T const &t)
 {
     string suffix = "th";
     auto wstr = num_to_string(size_t(t),0);

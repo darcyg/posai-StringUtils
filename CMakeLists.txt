@@ -5,7 +5,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 file(GLOB SU inc/*.h src/*.cpp)
 
-set(SOURCE_FILES ${SU} inc/lex.h inc/version.h)
+set(SOURCE_FILES ${SU})
 
 include_directories(inc)
 include_directories(src)

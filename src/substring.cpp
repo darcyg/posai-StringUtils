@@ -28,7 +28,7 @@ vector<string> split(string str, char sep)
     return ret;
 }
 
-vector<string> fixsubstrings(string str, size_t len)
+vector<string> sliding_window(string str, size_t len)
 {
     vector<string> ret;
     if (len>str.size())

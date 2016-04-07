@@ -30,7 +30,7 @@ vector<string> split(string str, char sep = '\n');
  * the mask of size len no longer fits. Returns an empty vector if str.length()
  * is smaller than len.
  */
-vector<string> fixsubstrings(string str, size_t len);
+vector<string> sliding_window(string str, size_t len);
 
 /**
  * Returns a substring of <str> containing the characters between, and not including, the

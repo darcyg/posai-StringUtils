@@ -13,5 +13,6 @@
 #include "lex.h"
 #include "padding.h"
 #include "substring.h"
+#include "textedit.h"
 
 #endif //POSAI_STRINGUTILS_STRINGUTILS_H
