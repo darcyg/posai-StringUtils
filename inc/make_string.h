@@ -9,10 +9,9 @@
 #include <type_traits>
 #include <iomanip>
 #include "version.h"
+#include "internal_defs.h"
 
 namespace str{
-
-using std::string;
 
 /**
  * Alias for a number being converted to a string.

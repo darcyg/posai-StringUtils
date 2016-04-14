@@ -8,12 +8,10 @@
 /**
  * Useful functions for text editing
  */
-#include <string>
+#include "internal_defs.h"
 
 namespace str
 {
-
-using std::string;
 
 /**
  * Returns a copy of str with the first N characters removed.

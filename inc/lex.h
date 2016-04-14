@@ -10,11 +10,10 @@
  */
 
 #include "make_string.h"
+#include "internal_defs.h"
 
 namespace str
 {
-
-using std::string;
 
 /**
  * Turns the input number t, interpreted as an integer, into a string and adds an

@@ -7,44 +7,44 @@
 
 namespace str {
 
-std::string uppercase(std::string const &str)
+string uppercase(crstring str)
 {
     std::locale current_loc;
-    std::string ret;
+    string ret;
 
     for (auto ch: str)
     {
         if (std::isupper(ch, current_loc))
             ret += ch;
         else
-            ret += std::use_facet<std::ctype<std::string::value_type>>(current_loc).toupper(ch);
+            ret += std::use_facet<std::ctype<string::value_type>>(current_loc).toupper(ch);
     }
 
     return ret;
 
 }
 
-std::string lowercase(std::string const &str)
+string lowercase(crstring str)
 {
     std::locale current_loc;
-    std::string ret;
+    string ret;
 
     for (auto ch: str)
     {
         if (std::islower(ch, current_loc))
             ret += ch;
         else
-            ret += std::use_facet<std::ctype<std::string::value_type>>(current_loc).tolower(ch);
+            ret += std::use_facet<std::ctype<string::value_type>>(current_loc).tolower(ch);
     }
 
     return ret;
 
 }
 
-std::string letters(std::string const &str)
+string letters(crstring str)
 {
     std::locale current_loc;
-    std::string ret;
+    string ret;
 
     for (auto ch: str)
     {
@@ -55,10 +55,10 @@ std::string letters(std::string const &str)
     return ret;
 }
 
-std::string digits(std::string const &str)
+string digits(crstring str)
 {
     std::locale current_loc;
-    std::string ret;
+    string ret;
 
     for (auto ch: str)
     {

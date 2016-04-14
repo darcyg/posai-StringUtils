@@ -6,7 +6,7 @@
 
 namespace str {
 
-std::size_t hamming_distance(std::string const &a, std::string const &b)
+std::size_t hamming_distance(crstring a, crstring b)
 {
     if (a.length() != b.length())
         return std::min(a.length(), b.length());
@@ -22,7 +22,7 @@ std::size_t hamming_distance(std::string const &a, std::string const &b)
     return ret;
 }
 
-std::size_t editing_distance(std::string const &a, std::string const &b)
+std::size_t editing_distance(crstring a, crstring b)
 {
     // Implementation nach Uwe Schöning, im Skript
     // "Algorithmen und Datenstrukturen", Uni Ulm, WS14/15

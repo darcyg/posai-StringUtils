@@ -2,7 +2,7 @@
 // Created by levin on 4/8/16.
 //
 
-#include <textedit.h>
+#include "textedit.h"
 
 namespace str{
 

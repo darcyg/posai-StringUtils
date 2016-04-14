@@ -5,19 +5,19 @@
 #ifndef POSAI_STRINGUTILS_TRANSFORMATIONS_H
 #define POSAI_STRINGUTILS_TRANSFORMATIONS_H
 
-#include <string>
+#include "internal_defs.h"
 
 namespace str {
 
 /**
  * Returns a reversed copy of the input string.
  */
-std::string reverse(std::string const &str);
+string reverse(crstring str);
 
 /**
  * Returns a copy of the input string with all occurrences of pattern replaced by replacement.
  */
-std::string substitute(std::string const &str, std::string pattern, std::string replacement);
+string substitute(crstring str, string pattern, string replacement);
 
 }
 

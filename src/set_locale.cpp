@@ -7,7 +7,7 @@
 
 namespace str {
 
-void set_locale(std::string identifier)
+void set_locale(string identifier)
 {
     std::locale::global(std::locale(identifier.c_str()));
 }
