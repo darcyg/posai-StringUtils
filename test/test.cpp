@@ -25,7 +25,14 @@ int main()
     std::cout << substitute("WaffelGaffelSchnaffelFalaffel","affel","anst") << std::endl;
     std::cout << hamming_distance("fafafafa","fagafaga") << std::endl;
     std::cout << editing_distance("APFEL","PFERD") << std::endl;
-    std::cout << hamming_distance("fafafafa","fafafa") << std::endl;
+    try
+    {
+        std::cout << hamming_distance("fafafafa", "fafafa") << std::endl;
+    }
+    catch (std::length_error& e)
+    {
+        std::cout << "Exception caught: " << e.what() << std::endl;
+    }
     std::cout << uppercase("Hello, World!") << std::endl;
     std::cout << lowercase("Hello, World!") << std::endl;
 
@@ -42,8 +49,7 @@ int main()
     std::cout << letters("a12b34c56def7g89hij0") << std::endl;
     std::cout << digits("a12b34c56def7g89hij0") << std::endl;
 
-    auto words = split("abc#def#Hello#World","#");
-    for (auto &w: words)
+    for (auto &w: split("abc#def#Hello#World","#"))
         std::cout << w << std::endl;
 
     std::cout << pad_front("Boop!",10,'_') << std::endl;
@@ -57,8 +63,7 @@ int main()
     std::cout << without_first("gabbagabba","gabba") << std::endl;
     std::cout << without("i like the flowers i like the daffodils","like") << std::endl;
 
-    auto parts = sliding_window("abcdefghijklmnopqrstuvwxyz", 10);
-    for (auto &p: parts)
+    for (auto &p: sliding_window("abcdefghijklmnopqrstuvwxyz", 10))
         std::cout << p << std::endl;
 
     for (auto i=0; i<25; ++i)
@@ -68,6 +73,10 @@ int main()
 
     std::cout << drop_front("dropthis|keepthis",string("dropthis").size()) << std::endl;
     std::cout << drop_back("keepthis|dropthis",string("dropthis").size()) << std::endl;
+
+    std::cout << truncate("qwertzuiopasdfghjklyxcvbnm",5) << std::endl;
+    std::cout << truncate(string(),5) << std::endl;
+    std::cout << truncate("qwertzuiopasdfghjklyxcvbnm",1000) << std::endl;
 
     return 0;
 }

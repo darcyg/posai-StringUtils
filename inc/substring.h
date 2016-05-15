@@ -37,6 +37,11 @@ vector<string> sliding_window(string const& str, size_t len);
 string between(string const& str, string const& start, string const& end);
 
 /**
+ * Equal to str.substr(0,len)
+ */
+string truncate(string const& str, size_t len);
+
+/**
  * Returns a substring of str from its beginning to (and not including) the first occurrence of match.
  */
 string until_first(string const& str, string match);

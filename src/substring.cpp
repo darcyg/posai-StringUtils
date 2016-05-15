@@ -85,4 +85,9 @@ string until_first(string const& str, string match)
     return ret.substr(0,it-ret.begin());
 }
 
+string truncate(string const &str, size_t len)
+{
+    return str.substr(0, len);
+}
+
 }

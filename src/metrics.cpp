@@ -6,10 +6,10 @@
 
 namespace str {
 
-std::size_t hamming_distance(string const& a, string const& b)
+std::size_t hamming_distance(string const& a, string const& b) throw(std::length_error)
 {
     if (a.length() != b.length())
-        return std::min(a.length(), b.length());
+        throw std::length_error("Hamming distance undefined for strings of non-equal length.");
 
     std::size_t ret = 0;
 

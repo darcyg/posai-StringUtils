@@ -14,16 +14,16 @@ namespace str
 {
 
 /**
- * Returns a copy of str with the first N characters removed.
- * If N exceeds str.size(), an empty string is returned.
+ * Returns a copy of str with the first n characters removed.
+ * If n exceeds str.size(), an empty string is returned.
  */
-string drop_front(string const &str, size_t characters);
+string drop_front(string const &str, size_t n);
 
 /**
- * Returns a copy of str with the last N characters removed.
- * If N exceeds str.size(), an empty string is returned.
+ * Returns a copy of str with the last n characters removed.
+ * If n exceeds str.size(), an empty string is returned.
  */
-string drop_back(string const &str, size_t characters);
+string drop_back(string const &str, size_t n);
 
 }
 
