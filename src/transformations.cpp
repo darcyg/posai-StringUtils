@@ -7,14 +7,14 @@
 
 namespace str {
 
-string reverse(crstring str)
+string reverse(string const& str)
 {
     string ret = str;
     std::reverse(ret.begin(), ret.end());
     return ret;
 }
 
-string substitute(crstring &str, string pattern, string replacement)
+string substitute(string const& str, string pattern, string replacement)
 {
     string ret = str;
 

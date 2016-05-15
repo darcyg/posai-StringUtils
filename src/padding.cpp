@@ -6,12 +6,12 @@
 
 namespace str {
 
-string pad_digits(crstring dgt_str, size_t digits)
+string pad_digits(string const& dgt_str, size_t digits)
 {
     return pad_front(dgt_str,digits,'0');
 }
 
-string pad_front(crstring str, size_t characters, char pad)
+string pad_front(string const& str, size_t characters, char pad)
 {
     if (str.length() >= characters)
         return str;
@@ -21,7 +21,7 @@ string pad_front(crstring str, size_t characters, char pad)
     return ret;
 }
 
-string pad_back(crstring str, size_t characters, char pad)
+string pad_back(string const& str, size_t characters, char pad)
 {
     if (str.length() >= characters)
         return str;

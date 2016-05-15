@@ -12,22 +12,22 @@ namespace str{
 /**
  * Returns uppercased input according to the current locale.
  */
-string uppercase(crstring str);
+string uppercase(string const& str);
 
 /**
  * Returns lowercased input according to the current locale.
  */
-string lowercase(crstring str);
+string lowercase(string const& str);
 
 /**
  * Returns the letters of the input string, discarding digits and special symbols.
  */
-string letters(crstring str);
+string letters(string const& str);
 
 /**
  * Returns the digits of the input string, discarding everything else.
  */
-string digits(crstring str);
+string digits(string const& str);
 
 }
 

@@ -14,6 +14,12 @@ int main()
     std::cout << std::boolalpha << std::isalpha(wchar_t(L'æ'),std::locale()) << std::endl;
     std::cout << std::boolalpha << std::isalpha('4',std::locale()) << std::endl;
 
+    std::cout << std::boolalpha << str::contains("FooBarBaz","Bar") << std::endl;
+    std::cout << std::boolalpha << str::begins_with("FooBarBaz","Foo") << std::endl;
+    std::cout << std::boolalpha << str::begins_with("FooBarBaz","foo") << std::endl;
+    std::cout << std::boolalpha << str::ends_with("FooBarBaz","Baz") << std::endl;
+    std::cout << std::boolalpha << str::ends_with("FooBarBaz","Bar") << std::endl;
+
     std::cout << reverse("Hello, World!") << std::endl;
     std::cout << substitute("Hello, World!","World","Posai") << std::endl;
     std::cout << substitute("WaffelGaffelSchnaffelFalaffel","affel","anst") << std::endl;

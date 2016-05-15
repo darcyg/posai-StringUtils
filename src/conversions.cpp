@@ -7,7 +7,7 @@
 
 namespace str {
 
-string uppercase(crstring str)
+string uppercase(string const& str)
 {
     std::locale current_loc;
     string ret;
@@ -24,7 +24,7 @@ string uppercase(crstring str)
 
 }
 
-string lowercase(crstring str)
+string lowercase(string const& str)
 {
     std::locale current_loc;
     string ret;
@@ -41,7 +41,7 @@ string lowercase(crstring str)
 
 }
 
-string letters(crstring str)
+string letters(string const& str)
 {
     std::locale current_loc;
     string ret;
@@ -55,7 +55,7 @@ string letters(crstring str)
     return ret;
 }
 
-string digits(crstring str)
+string digits(string const& str)
 {
     std::locale current_loc;
     string ret;

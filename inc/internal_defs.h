@@ -10,7 +10,6 @@
 namespace str
 {
     using std::string;
-    using crstring = std::string const&;
 }
 
 #endif //POSAI_STRINGUTILS_INTERNAL_DEFS_H

@@ -21,10 +21,10 @@ namespace str
  * e.g. 1st, 2nd, 3rd, 4th, ... 10th, 11th, 12th, ... 20th, 21st, 22nd, 23rd, ...
  */
 template<typename T>
-typename std::enable_if<
+std::enable_if_t<
     std::is_convertible<T,size_t>::value,
     string
->::type  natural_num_suffix(T const &t)
+>  natural_num_suffix(T const &t)
 {
     string suffix = "th";
     auto wstr = num_to_string(size_t(t),0);

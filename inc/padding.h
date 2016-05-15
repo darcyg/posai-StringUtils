@@ -15,19 +15,19 @@ namespace str
  * as the given amount of digits.
  * This is equivalent to pad_front(dgt_str,digits,'0').
  */
-string pad_digits(crstring dgt_str, size_t digits);
+string pad_digits(string const& dgt_str, size_t digits);
 
 /**
  * Pads the given input string with the given pad character. If the string is shorter
  * than the given size, pad characters are added at the front until the string fits.
  */
-string pad_front(crstring str, size_t characters, char pad=' ');
+string pad_front(string const& str, size_t characters, char pad=' ');
 
 /**
  * Similar to pad_front, but adds the pad characters at the end of the string
  * instead of the front.
  */
-string pad_back(crstring& str, size_t characters, char pad=' ');
+string pad_back(string const& str, size_t characters, char pad=' ');
 
 }
 

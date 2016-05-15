@@ -14,22 +14,17 @@ namespace str {
 using std::vector;
 
 /**
- * Convenient lookup.
- */
-bool contains(crstring str, crstring substr);
-
-/**
  * Splits <str> at every occurrence of <sep> and returns all resulting substrings in a vector.
  * If sep is not present in str, an empty vector is returned.
  */
-vector<string> split(crstring str, crstring sep = "\n");
+vector<string> split(string const& str, string sep = "\n");
 
 /**
  * Extracts substrings of fixed size len from str by iterating over it until
  * the mask of size len no longer fits. Returns an empty vector if str.length()
  * is smaller than len.
  */
-vector<string> sliding_window(crstring str, size_t len);
+vector<string> sliding_window(string const& str, size_t len);
 
 /**
  * Returns a substring of <str> containing the characters between, and not including, the
@@ -39,22 +34,22 @@ vector<string> sliding_window(crstring str, size_t len);
  * The function begins to search of <end> only after it has found an occurrence of <start>.
  * If there are matches before that, they are ignored.
  */
-string between(crstring str, crstring start, crstring end);
+string between(string const& str, string const& start, string const& end);
 
 /**
  * Returns a substring of str from its beginning to (and not including) the first occurrence of match.
  */
-string until_first(crstring str, crstring match);
+string until_first(string const& str, string match);
 
 /**
  * Returns a copy of str with the first occurrence of match removed.
  */
-string without_first(crstring str, crstring match);
+string without_first(string const& str, string match);
 
 /**
  * Returns a copy of str with all occurrences of match removed.
  */
-string without(crstring str, crstring match);
+string without(string const& str, string match);
 
 }
 

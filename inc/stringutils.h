@@ -5,11 +5,11 @@
 #ifndef POSAI_STRINGUTILS_STRINGUTILS_H
 #define POSAI_STRINGUTILS_STRINGUTILS_H
 
+#include "query.h"
 #include "transformations.h"
 #include "metrics.h"
 #include "conversions.h"
 #include "set_locale.h"
-//#include "make_string.h" //implicitly included by lex.h
 #include "lex.h"
 #include "padding.h"
 #include "substring.h"

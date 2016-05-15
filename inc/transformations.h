@@ -12,12 +12,12 @@ namespace str {
 /**
  * Returns a reversed copy of the input string.
  */
-string reverse(crstring str);
+string reverse(string const& str);
 
 /**
  * Returns a copy of the input string with all occurrences of pattern replaced by replacement.
  */
-string substitute(crstring str, string pattern, string replacement);
+string substitute(string const& str, string pattern, string replacement);
 
 }
 

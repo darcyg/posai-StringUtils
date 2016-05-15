@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.3)
 project(posai_StringUtils)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -s -std=c++14 -O3")
 
 file(GLOB SU inc/*.h src/*.cpp)
 

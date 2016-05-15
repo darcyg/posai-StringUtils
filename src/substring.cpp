@@ -4,12 +4,13 @@
 
 #include <iostream>
 #include <algorithm>
+#include "query.h"
 #include "substring.h"
 
 namespace str {
 
 
-vector<string> split(crstring str, crstring sep)
+vector<string> split(string const& str, string sep)
 {
     vector<string> ret;
     string temp = str;
@@ -28,7 +29,7 @@ vector<string> split(crstring str, crstring sep)
     return ret;
 }
 
-vector<string> sliding_window(crstring str, size_t len)
+vector<string> sliding_window(string const& str, size_t len)
 {
     vector<string> ret;
     if (len>str.size())
@@ -44,14 +45,14 @@ vector<string> sliding_window(crstring str, size_t len)
     return ret;
 }
 
-string between(crstring str, crstring start, crstring end)
+string between(string const& str, string const& start, string const& end)
 {
     string ret=str.substr(str.find(start)+start.size(),str.size());
     ret=ret.substr(0,ret.find(end));
     return ret;
 }
 
-string without_first(crstring str, crstring match)
+string without_first(string const& str, string match)
 {
     string ret = str;
 
@@ -61,7 +62,7 @@ string without_first(crstring str, crstring match)
     return ret;
 }
 
-string without(crstring str, crstring match)
+string without(string const& str, string match)
 {
     string ret = str;
 
@@ -73,12 +74,7 @@ string without(crstring str, crstring match)
     return ret;
 }
 
-bool contains(crstring str, crstring substr)
-{
-    return (std::search(str.begin(),str.end(),substr.begin(),substr.end()) != str.end());
-}
-
-string until_first(crstring str, crstring match)
+string until_first(string const& str, string match)
 {
     string ret = str;
     auto it = std::search(ret.begin(),ret.end(),match.begin(),match.end());
