@@ -12,5 +12,5 @@ include_directories(src)
 
 add_library(posai_StringUtils SHARED ${SOURCE_FILES})
 
-add_executable(ptest test/test.cpp)
-target_link_libraries(ptest posai_StringUtils)
+add_executable(sutest test/test.cpp)
+target_link_libraries(sutest posai_StringUtils)
